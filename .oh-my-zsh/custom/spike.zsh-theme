@@ -1,15 +1,11 @@
 # -----------------------------------------------------------------------------
-#                 FILE: robbl.zsh-theme
-#          DESCRIPTION: oh-my-zsh theme file based on the dogenpunkt.zsh-theme 
-#                       by Matthew Nelson (dogenpunk@gmail.com)
-#               AUTHOR: Robert Robbl Schulze (robertschulze@gmx.net)
-#                       Modified by Steve Pike 2012/02/13
+#                 FILE: spike.zsh-theme
+#          DESCRIPTION: oh-my-zsh theme file based on robbl.zsh-theme 
+#                       by Robert Robbl Schulze (robertschulze@gmx.net)
+#               AUTHOR: Steve Pike
 #              VERSION: 0.1
 # -----------------------------------------------------------------------------
 
-# output: [user] @ [full path] (on [git or svn branch] (commited [time since commit] ago))
-# PROMPT='%{$fg[blue]%}%m %{$fg_bold[white]%}at %{$reset_color%}%{$fg[cyan]%}%~%{$reset_color%}$(git_prompt_info)$(git_time_since_commit)$(svn_prompt_info)$(svn_time_since_commit)
-# %{$fg[red]%}%!%{$reset_color%} $(prompt_char) '
 PROMPT='%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)$(git_time_since_commit)$(svn_prompt_info)$(svn_time_since_commit)%{$fg_bold[blue]%} % %{$reset_color%}'
 
 # output: [git or svn status] (| rvm info)
