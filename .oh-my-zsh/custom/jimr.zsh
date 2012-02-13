@@ -27,13 +27,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-keychain ~/.ssh/id_dsa &>/dev/null
-. ~/.keychain/*-sh
+# keychain ~/.ssh/id_dsa &>/dev/null
+# . ~/.keychain/*-sh
 
 # use rsync to resume partial scp transfers
 alias scpr="rsync --partial --progress --rsh=ssh"
-
-export PYTHONSTARTUP=/home/jim/.pystartup
 
 function setdsm() {
     # add the current directory and the parent directory to PYTHONPATH
@@ -199,3 +197,6 @@ function scm_diff() {
 alias vvim="vim -O"
 
 alias vipython="python ~/src/ipython/ipython.py"
+
+ZSH_THEME_SVN_PROMPT_PREFIX="svn:("
+ZSH_THEME_SVN_PROMPT_SUFFIX=")"

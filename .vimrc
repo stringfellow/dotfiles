@@ -1,7 +1,7 @@
 " File: vimrc
 " Author: James Rutherford
 " Created: 2003-04-01
-" Last Updated: 2012-01-31
+" Last Updated: 2012-02-02
 " Note: For most systems, you can ignore the gentoo-specific things at the end
 " of this file; they won't do any harm.
 
@@ -14,8 +14,8 @@ set expandtab           " expand tabs to spaces
 set backspace=indent,eol,start " make backspace delete lots of things
 "set autoindent          " use automatic indenting
 set smartindent         " use smart indenting
-"set foldenable          " enable code folding
-"set foldmethod=syntax
+set foldenable          " enable code folding
+set foldmethod=syntax
 set grepprg=grep\ -nH\ $    " required for latexsuite - sets :grep default
 set nrformats=alpha,hex " allows C-A and C-X to (de/in)crement letters & hex
 set nocompatible        " use Vim defaults (much better!)
@@ -26,7 +26,7 @@ set undolevels=1000     " nice large upper limit on undo
 set history=50          " keep 50 lines of command history
 set ruler               " show the cursor position all the time
 set incsearch           " highlight searches while you type them
-set mouse=a             " use the mouse for visual selects, scrolling, etc...
+set mouse=n             " use the mouse for visual selects, scrolling, etc...
 set fileformat=unix     " er... <LF> anyone?
 set wildmenu            " enable more advanced tab completion -- nice
 set title               " let xterm inherit the title according to vim
@@ -42,7 +42,7 @@ set formatoptions=tcqron        " this one does a few things:
 set fileencodings+=default  " a sane fallback for encoding detection
 let html_use_css=1      " make :TOhtml use CSS instead of <font> lame-ness
 let use_xhtml=1         " make :TOhtml use XHTML instead of plain HTML
-let loaded_matchparen=1 " prevent parenthesis-matching (vim >= 7)
+"let loaded_matchparen=1 " prevent parenthesis-matching (vim >= 7)
 set ttyfast
 set ttyscroll=0
 set splitright          " opens vertical splits to the right
@@ -130,6 +130,7 @@ source ~/.vim/jimr/autocmd.vim
 source ~/.vim/jimr/maps.vim
 source ~/.vim/jimr/plugins.vim
 source ~/.vim/jimr/pymaps.vim
+source ~/.vim/jimr/fancy.vim
 
 " Vundle for bundle management!
 set rtp+=~/.vim/bundle/vundle/
