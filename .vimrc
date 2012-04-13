@@ -1,7 +1,7 @@
 " File: vimrc
 " Author: James Rutherford
 " Created: 2003-04-01
-" Last Updated: 2012-02-02
+" Last Updated: 2012-03-22
 " Note: For most systems, you can ignore the gentoo-specific things at the end
 " of this file; they won't do any harm.
 
@@ -145,6 +145,8 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Soares/vim-snipmate'
+Bundle 'nvie/vim-flake8'
+Bundle 'juvenn/mustache.vim'
 
 " vim.org scripts
 Bundle 'L9'
@@ -157,3 +159,7 @@ Bundle 'PySmell'
 Bundle 'pylint.vim'
 Bundle 'pyflakes.vim'
 Bundle 'tslime.vim'
+Bundle 'vim-coffee-script'
+
+au BufRead,BufNewFile *.coffee set ft=coffee
+au BufRead,BufNewFile *.eco set ft=eco
